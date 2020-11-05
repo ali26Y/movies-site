@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Coding Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aims to solve a programming test using the `omdb` apis, the project has been bootstrapped by CRA. 
 
-## Available Scripts
+### Requirements
+
+Before Running the Project, please make sure you:
+
+- have node v10.16.3 or greater
+- You setup an  `.env` file inside the root directory with a environment variable `REACT_APP_API_KEY={your_omdbapi_key}`
 
 In the project directory, you can run:
 
@@ -14,57 +19,32 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## NPM packages used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+My goal was to achieve a solution with minimal dependencies and to avoid overuse of npm packages. I believe it can have performance implications when we use packages unnecessarily.
 
-### `yarn eject`
+- ReactJS v17.0.1
+- Emotion (css in JS) v10.0.27
+- qs v6.9.4
+- debounce promise v3.1.2
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use of React Context API for fetching and managing state for data storage, such as loading, error and data. This simplifies the components.
+- No CSS frameworks used.
+- lightweight and re-usable
+- Functional Javascript - No class based approach
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Improvements I can make
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Due to a lack of time I was unable to complete the following:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Mobile optimisation
+- Introduction of types/typescript
+- Unit tests/ browser tests
+- deployment configs for static and container(docker) deployments
